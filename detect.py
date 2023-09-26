@@ -55,8 +55,8 @@ from utils.general import (LOGGER, Profile, check_file, check_img_size, check_im
                            increment_path, non_max_suppression, print_args, scale_boxes, strip_optimizer, xyxy2xywh)
 from utils.torch_utils import select_device, smart_inference_mode
 
+# TO-DO: Adicionar função de tradução de texto
 
-def traduzir(text: str) -> 
 
 def speak(text: str):
     texto_para_som = pyttsx3.init()
