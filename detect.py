@@ -57,10 +57,16 @@ from utils.torch_utils import select_device, smart_inference_mode
 
 # TO-DO: Adicionar função de tradução de texto
 
+def trans (x):
+    translator = Translator(to_lang="pt-br")
+    translation = translator.translate(x)
+    return translation
+
 
 def speak(text: str):
     texto_para_som = pyttsx3.init()
-    texto_para_som.say(text)
+    pttext = trans(text)
+    texto_para_som.say(pttext)
     texto_para_som.runAndWait()
 
 @smart_inference_mode()
