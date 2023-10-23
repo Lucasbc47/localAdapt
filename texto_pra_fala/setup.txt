@@ -1,0 +1,10 @@
+- Abrir a Google Cloud Console
+- Selecionar projeto
+    - Ativar Cloud Text To Speech API
+    - Criar conta de serviço
+        - Exportar chave (json da conta)
+
+-- No terminal
+# pip install pydub pyaudio translate
+# pip install --upgrade google-cloud-texttospeech
+GOOGLE_APPLICATION_CREDENTIALS="quixotic-tesla-402716-cec4cfa9b718.json"
