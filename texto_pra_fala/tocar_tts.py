@@ -1,8 +1,8 @@
 # Text to Speech (TTS): texto pra fala e tradução incluido
 import os
 import io
-
 import pyaudio
+
 from google.cloud import texttospeech
 from pydub import AudioSegment
 from translate import Translator
