@@ -11,4 +11,5 @@ Raspberry Pi LESSON 63: Object Detection on Raspberry Pi Using Tensorflow Lite
 https://www.youtube.com/watch?v=yE7Ve3U5Slw
 
 https://chat.openai.com/share/c9548400-6132-4c6f-a737-8afba14f71a9
+https://github.com/tensorflow/examples/tree/a9265a997d0410c431a292e3553646b3b655ea1f/lite/examples/object_detection/raspberry_pi
 ```
