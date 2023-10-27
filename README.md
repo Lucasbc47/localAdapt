@@ -1,3 +1,4 @@
+![img](logo.png)
 # projeto-samsung-adapt
 ```
 Iniciar com tensorflow lite no raspberry pi:
