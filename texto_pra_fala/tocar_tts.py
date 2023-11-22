@@ -1,7 +1,11 @@
 # Text to Speech (TTS): texto pra fala e tradução incluido
+# Usuário pode escolher entre espeak, gcloud ou pyttsx3
 import os
 import io
+
 import pyaudio
+import subprocess
+import pyttsx3
 
 from google.cloud import texttospeech
 from pydub import AudioSegment
@@ -19,9 +23,27 @@ def traduzir(texto: str=None):
     translation = translator.translate(texto)
     return translation
 
+def falar_espeak(texto: str=None) -> None:
+    """
+    Função de falar texto utilizando espeak
+    Opção alternativa I
+    """
+    # sudo apt-get install espeak
+    subprocess.run(['espeak', texto])
+
+def falar_ttsx(texto: str=None) -> None:
+    """
+    Função de falar texto utilizando pyttsx3
+    Opção alternativa II
+    """
+    engine = pyttsx3.init()
+    engine.say(texto)
+    engine.runAndWait()
+
 def falar(texto: str=None, tocar: bool=True) -> None:
     """
     Função pra falar com ajuda da API da Google Cloud
+
     """
     # Inicializamos o cliente, texto sintetizado da Google Cloud TTS
     cliente_tts = texttospeech.TextToSpeechClient()
@@ -71,6 +93,3 @@ def falar(texto: str=None, tocar: bool=True) -> None:
     if not tocar:
         with open('saida.mp3', 'wb') as saida:
             saida.write(bytes_da_resposta)
-
-
-
