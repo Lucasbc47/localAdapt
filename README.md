@@ -2,15 +2,22 @@
   <h1 align="center">localAdapt</h1>
 </p>
 
-## Projeto feito para o Samsung Innovation Campus 2023
+## Projeto feito para o Samsung Innovation Campus 2023. Este foi o projeto final. Veja também o [FreeMusic](https://github.com/Lucasbc47/FreeMusic)!
+
+## Inicio
 Se trata de um prótotipo pra ajudar deficientes visuais, consta um dispositivo móvel (RPI) conectada a uma câmera que detecta objetos e pessoas a frente, e envia as informações pra um fone via texto pra voz. Ele utiliza o **yolov5** pra código de detecção de objetos e dataset. Pode se ligar o dispositivo com um powerbank. A ideia era portar num cordão ou até mesmo em uma bengala.
 
 ## Itens utilizados
 - Raspberry Pi 4B
+  - recomendo colocar dissipador de calor e um cooler
 - Raspberry Pi Camera Rev 1.3
 - Powerbank
-- Case impressa 3D (https://www.thingiverse.com/thing:3732714)
+- Case impressa 3D 
+  - https://www.thingiverse.com/thing:3732714
 - Fone com fio
+
+### OBS: pode utilizar webcam genérica também, porém cabe as modificações necessárias....
+
 
 ## Setup  
 - Instale as bibliotecas necessárias e libcamera
@@ -51,3 +58,9 @@ sudo systemctl enable project
 # status
 sudo systemctl status project
 ```
+
+## Contribuidores
+- [Lucas](https://github.com/Lucasbc47) 
+- [Letícia](https://github.com/LeyyGarcia)
+- [Emilaine](https://github.com/emilaine)
+- [Maicon](https://github.com/mikeDB0108)
