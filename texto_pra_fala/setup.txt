@@ -5,6 +5,11 @@
         - Exportar chave (json da conta)
 
 -- No terminal
-# pip install pydub pyaudio translate
-# pip install --upgrade google-cloud-texttospeech
-GOOGLE_APPLICATION_CREDENTIALS="quixotic-tesla-402716-cec4cfa9b718.json"
+
+pip install pydub
+pip install pyaudio
+pip install translate
+pip install google-cloud-texttospeech
+
+# Setar na ENV: 
+GOOGLE_APPLICATION_CREDENTIALS="arquivo.json"
