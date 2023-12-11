@@ -12,7 +12,7 @@ from pydub import AudioSegment
 from translate import Translator
 
 # Chave do '.json' pra acessar a API
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "texto_pra_fala/json/tts.json"
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "texto_pra_fala/json/NOME_DO_ARQUIVO_JSON"
 
 def substituicao(texto: str) -> str:
     nomes_classes = ['pessoa', 'bicicleta', 'carro', 'motocicleta', 'avião', 'ônibus', 'trem', 'caminhão', 'barco', 'semáforo', 'hidrante', 'placa de pare', 'parquímetro', 'banco', 'pássaro', 'gato', 'cachorro', 'cavalo', 'ovelha', 'vaca', 'elefante', 'urso', 'zebra', 'girafa', 'mochila', 'guarda-chuva', 'bolsa', 'gravata', 'mala', 'frisbee', 'esqui', 'snowboard', 'bola esportiva', 'pipa', 'taco de beisebol', 'luva de beisebol', 'skate', 'prancha de surfe', 'raquete de tênis', 'garrafa', 'taça de vinho', 'xícara', 'garfo', 'faca', 'colher', 'tigela', 'banana', 'maçã', 'sanduíche', 'laranja', 'brócolis', 'cenoura', 'cachorro-quente', 'pizza', 'rosquinha', 'bolo', 'cadeira', 'sofá', 'planta em vaso', 'cama', 'mesa de jantar', 'vaso sanitário', 'TV', 'laptop', 'mouse', 'controle remoto', 'teclado', 'celular', 'micro-ondas', 'forno', 'torradeira', 'pia', 'geladeira', 'livro', 'relógio', 'vaso', 'tesoura', 'ursinho de pelúcia', 'secador de cabelo', 'escova de dentes']

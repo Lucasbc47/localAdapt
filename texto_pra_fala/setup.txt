@@ -4,12 +4,12 @@
     - Criar conta de serviço
         - Exportar chave (json da conta)
 
+Após exportar o arquivo da chave.json coloque na ENV ou altere
+no arquivo tocar_tts.py e troque o nome do arquivo
+
 -- No terminal
 
 pip install pydub
 pip install pyaudio
 pip install translate
 pip install google-cloud-texttospeech
-
-# Setar na ENV: 
-GOOGLE_APPLICATION_CREDENTIALS="arquivo.json"
